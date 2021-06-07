@@ -28,7 +28,6 @@ module.exports = class ShwarmaOrder extends (
     this.sDrinks = "";
     this.sItem1 = "shawarma";
     this.sItem2 = "fries";
-    this.sumSize = this.sSize1 + this.sSize2;
   }
 
   handleInput(sInput) {
@@ -119,7 +118,6 @@ module.exports = class ShwarmaOrder extends (
         if (sInput.toLowerCase() != "no") {
           this.sDrinks = sInput;
         }
-        const convertSize = Number(this.sumSize);
         aReturn.push("Thank-you for your order");
         aReturn.push(`Your order is as folllows:
           Your first order is ${this.sOrder1} of size ${this.sSize1} with ${this.sToppings1} <br/>
